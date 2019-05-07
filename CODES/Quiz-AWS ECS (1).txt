@@ -1,0 +1,271 @@
+Quiz –
+
+Module – 1
+
+1. ECS is a container management service provided by
+a. Azure
+b. AWS
+c. OpenShift
+d. Kubernetes
+
+Feedback:
+Incorrect if (a) is chosen: This is not quite correct. Azure has a separate container management services, which is called as Azure Container services.
+Correct if (b) is chosen. This is correct. ECS is a container management service provided by AWS. 
+Incorrect if (c) is chosen. This is not quite correct. OpenShift is a container management service provided by RedHat.
+Incorrect if (d) is chosen. This is not quite correct. Kubernetes is an open source container management solution itself.
+
+2. For the application to be deployed in ECS, it must be designed to run in containers>
+a. True
+b. False
+
+Feedback:
+Correct if (a) is chosen: This is correct option. Your application must be designed to run on container. Then it will be eligible to use the AWS ECS container services.
+Incorrect if (b) is chosen. This is not quite correct. Application must be designed to run on containers like Docker.
+
+3. Chose the incorrect option specified for Tasks Definition?
+a. This is a text file in JSON format that describes one or more containers that form your application
+b. Specify various parameters for your application, such as which containers to use and the repositories in which they are located
+c. Specify Ports details, data volumes should be used in container.
+d. You can’t specify the memory and CPU requirements for the container in task definitions, that you need to specify separately in Auto scaling.
+       
+       Feedback:
+Incorrect if (a) is chosen: This is not quite correct option. This is correct statement actually.
+Incorrect if (b) is chosen. This is not quite correct. This is correct statement actually, you can specify the various parameters for your application in the tasks definitions such as container details, repository details etc.
+Incorrect if (c) is chosen. This is not quite correct. This is correct statement actually. In the task definition, you can specify the application port, and the data volumes.
+Correct if (d) is chosen. This is correct. This is an incorrect statement actually, you can specify the memory or CPU requirements in the task definitions.
+
+4. The cluster of containers provided by AWS ECS runs on Amazon Public cloud only?
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. AWS lets you run the ECS containers cluster in your own VPC which is allowing you to use your own VPC security groups and network ACLs.
+Correct if (b) is chosen. This statement is false actually. 
+
+5. ?You must use the EC2 container registry service to store the images which work with AWS ECS??
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. End users has an option to either use EC2 container registry or any other repository.
+Correct if (b) is chosen. This statement is false actually. 
+
+Module – 2
+
+6. Docker is an application container for deploy, run an application, it is a licensed tool provided by AWS only?
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. Docker is an open source technology.
+Correct if (b) is chosen. This statement is false actually. 
+
+7. Choose the correct order of commands used to install and run the docker on an EC2 instance.
+a. sudo yum update –y > sudo yum install –y Docker > yum repolist > sudo service docker start
+b. yum repolist > sudo yum update –y > sudo yum install –y Docker > sudo service docker start
+c. sudo yum install –y Docker > yum repolist > sudo yum update –y > sudo service docker start
+d. sudo yum update –y > yum repolist > sudo yum install –y Docker > sudo service
+       Feedback:
+Incorrect if (a) is chosen: This is not quite correct order. Before actually installing the Docker, you need to first have Docker repository add in the source.
+Incorrect if (b) is chosen. This is not quite correct order. Before adding the repolist, you need to first update the system with update command.
+Incorrect if (c) is chosen. This is not quite correct order. Sudo Yum update should the first command to be executed.
+Correct if (d) is chosen. This is correct order.
+
+8. Choose the correct command to build a Docker image.
+a. Docker image <dockerfile> <dockerimagename>
+b. Docker run <dockerimagename>
+c. Docker build –t <imagename>
+d. Docker ps <imagename>
+
+       Feedback:
+Incorrect if (a) is chosen: This is not quite correct. This is not a correct command to build an image, this command is basically used to view the images available in docker (without giving any parameter).
+Incorrect if (b) is chosen. This is not quite correct. This command is used to run the docker image.
+Correct if (c) is chosen. This is correct. This is correct command to build the docker image.
+Incorrect if (d) is chosen. This is not quite correct. Docker ps command actually returns the number of container and no of images which are up and running on the container.
+
+9. To push the image image into EC2 container registry, you need to tag the image with some tag number or version.
+a. True
+b. False
+
+       Feedback:
+Correct if (a) is chosen: This is correct. Once your application is running fine on the Image you need to Tag that Image with any Tag number or version. Then you can push the image to EC2 container registry.
+Incorrect if (b) is chosen. This is not quite correct option.
+
+10. Which one is the correct command to push the image into a container registry?
+a. docker tag <imagename>:latest <containerregistry>
+b. docker push <imagename>:latest <containerregistry>
+c. docker push <containerregistry>/<imagename>:latest
+d. docker push <containerregistry>:<imagename>:latest
+
+       Feedback:
+Incorrect if (a) is chosen: This is not quite correct. This is the command you actually use to tag the docker image in a specified container registry.
+Incorrect if (b) is chosen. This is not quite correct. The syntax given for the command is incorrect.
+Incorrect if (c) is chosen. This is correct. This is the correct syntax for the push command.
+Incorrect if (d) is chosen. This is not quite correct. The syntax given for the command is incorrect. You need to replace : with /.
+
+Module – 3
+
+11. You can’t deregister same container instance from the ECS cluster and register to other Cluster directly?
+a. True
+b. False
+
+       Feedback:
+Correct if (a) is chosen: This is correct. To relocate container instance resources, you need to terminate container instances from one cluster and launch new container instances in the cluster.
+Incorrect if (b) is chosen. This is not correct option.
+
+12. ?Choose the features provided by Ec2 Container service.?
+a. Manage Cluster state
+b. Schedule container with third party scheduler or own scheduler
+c. Scalability
+d. Extensibility
+e. All of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. EC2 container service manage the state of cluster, it gives you all the events happening in your cluster and it gives you the current status of your cluster. But this is not the only feature.
+Incorrect if (b) is chosen. This is not correct option. Ec2 Container service, allows you to schedule containers in multiple ways. You can use your Amazon ECS to schedule the placement of your container across your cluster and also you can integrate your own scheduler or third party scheduler. But this is not the only feature.
+Incorrect if (c) is chosen. This is not correct option. You can launch ten or ten thousands of the Docker container in a second by using Amazon ECS with no additional complexity. But this is not the only feature.
+Incorrect if (d) is chosen. This is not correct option. Amazon EC2 container service can be easily integrated or extended through the simple API. But this is not the only feature.
+Correct if (e) is chosen. This is correct option. Actually, all of the above are the features provided by EC2 container services.
+
+13. Which component in EC2 service is used for connecting the container instances with Cluster?
+a. Task Definition
+b. Container Instances
+c. Container Agents
+d. None of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. Actually task definition is required to run Docker containers in Amazon EC2 Container service.
+Incorrect if (b) is chosen. This is not correct option. Container instance is a regular instance where we deploy the application code.
+Correct if (c) is chosen. This is correct option. ECS container agent allows container instances to connect to your cluster.
+Incorrect if (d) is chosen. This is not correct option.
+
+14. To define the new security layer over the ECS services at the task level, you must create the task role inside task definition.
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. You can create the task role and define the access level there for tasks definition, but this is not a mandatory step.
+Correct if (b) is chosen. This is correct option. You can also use the IAM role and assign to your tasks definition.
+
+15. Chose the incorrect task placement strategy
+a. AZ balanced spread
+b. AZ Balanced BinPack
+c. One Task Per Host
+d. None of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. AZ Balanced Spread is the correct task placement strategy.
+Incorrect if (b) is chosen. This is not the correct option. AZ Balanced BinPack is the correct task placement strategy.
+Incorrect if (c) is chosen. This is not the correct option. One Task Per Host is the correct placement strategy.
+Correct if (d) is chosen. This is the correct option. All of the above mentioned placement strategies all correct.
+
+
+
+
+
+Module – 4
+
+
+
+
+16. Application Load balancer is used to route the requests to the group of instances.
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. To route the request to a group of instances, this is the feature in Classic load balancer actually.
+Correct if (b) is chosen. This is correct option. Application load balancer is actually used to route the specific request to a particular group of instances e.g. request like abc.com/a
+
+17. What does SSL stands for
+a. Secure Sockets networks layer
+b. Social Security Layer
+c. Secure Socket Layer
+d. None of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. This is incorrect understanding of SSL.
+Correct if (b) is chosen. This is correct option. This is correct SSL stands for Secure Sockets Layer.
+Incorrect if (c) is chosen: This is not the correct option. This is incorrect understanding of SSL.
+Incorrect if (d) is chosen: This is not the correct option.
+
+18. AWS has an option to enable the load balancer for routing requests to cross availability zones
+a. Yes
+b. No
+
+       Feedback:
+Correct if (a) is chosen. This is correct option. AWS ELB has option to enable the load balancer for cross availability zones. You have to check Enable Cross-Zone Load Balancing option in ELB configuratons.
+Incorrect if (b) is chosen: This is not the correct option.
+
+19. How can you make the Elastic Load balancer public internet-facing?
+a. There is no option to make ELB internet-facing.
+b. In the availability zones you have option to mark it public zones.
+c. You need to select the public subnet.
+d. You need to choose the public VPC in availability zones.
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. You can mark the ELB to internet-facing.
+Incorrect if (b) is chosen. This is not the correct option.
+Correct if (c) is chosen. This is correct option. Yes you need to select the subnet as Public subnet.
+Incorrect if (d) is chosen. This is not the correct option. There is no such option like public VPC.
+
+20. Elastic Load Balancer can’t be configured as a service, you can still configure Auto Scaling as a service?
+a. Yes
+b. No
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. You can configure both ELB and auto scaling as a service in ECS.
+Correct if (b) is chosen. This is the correct option. 
+
+Module – 5
+
+21. What CICD stands for?
+a. Continuous integration and continuous Development
+b. Continuous integration for continuous Deployment
+c. Continuous integration and continuous Deployment
+d. None of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. This is not the correct understanding for CICD.
+Incorrect if (b) is chosen: This is not the correct option. This is not the correct understanding for CICD.
+Correct if (c) is chosen. This is the correct option. CICD stands for Continuous Integration and Continuous Deployment.
+Incorrect if (d) is chosen: This is not the correct option.
+
+22. What is the correct order of CICD pipeline stages?
+a. Build Automation > Test Automation > Continuous Integration > Continuous Deployment
+b. Test Automation > Continuous Integration > Build Automation > Continuous Deployment
+c. Continuous Integration > Test Automation > Build Automation > Continuous Deployment
+d. Build Automation > Continuous Integration > Test Automation > Continuous Deployment
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct order. Test automation should be after continuous integration.
+Incorrect if (b) is chosen: This is not the correct option. Build step has to be first step.
+Incorrect if (c) is chosen: This is not the correct option. Build step has to be first step.
+Correct if (d) is chosen. This is the correct option. Build Automation > Continuous Integration > Test Automation > Continuous Deployment
+
+23. There is no process to automatically create the task definition which can be leveraged for CICD pipeline
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. You can create the tasks definitions dynamically through scripts and then refer those tasks in CICD pipeline.
+Correct if (b) is chosen: This is the correct option. You can create the tasks definitions dynamically through scripts and then refer those tasks in CICD pipeline.
+
+24. What is the correct command to update the task definition service in ECS?
+a. aws ecs describe-task-definition
+b. aws ecs create-service
+c. aws ecs update-service
+d. None of the above
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. This command is a basically used to describe the task definition.
+Incorrect if (b) is chosen: This is not the correct option. This command is basically used to create a new service.
+Correct if (c) is chosen: This is the correct option. This command is actually used to update the ECS services in AWS.
+Incorrect if (d) is chosen: This is not the correct option.
+
+25. Maximum percent is a parameter which required while deploying the service.
+a. True
+b. False
+
+       Feedback:
+Incorrect if (a) is chosen: This is not the correct option. Maximum Percent is what will be the number of containers it is going to spawn with the service definition
+Correct if (a) is chosen: This is the correct option. Minimum Healthy Percent is the number of container which service is going to have, while deploying.
