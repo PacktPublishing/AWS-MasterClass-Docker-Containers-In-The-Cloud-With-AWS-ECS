@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Video for only $5 on PacktPub.com](https://www.packtpub.com/product/aws-masterclass-docker-containers-in-the-cloud-with-aws-ecs-video/9781789533132)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # AWS MasterClass: Docker Containers In The Cloud With AWS ECS [Video]
 This is the code repository for [AWS MasterClass: Docker Containers In The Cloud With AWS ECS [Video]](https://www.packtpub.com/virtualization-and-cloud/aws-administration-definitive-course-video?utm_source=github&utm_medium=repository&utm_campaign=9781788472555), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
